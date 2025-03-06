@@ -7,6 +7,10 @@ export const SelectDateContainer = styled(InputContainer)`
     padding-top: 0px;
   }
 
+  .css-sx5hge {
+    padding-top: 0px;
+  }
+
   .css-1wc848c-MuiFormHelperText-root.Mui-error {
     color: ${RED};
   }
