@@ -10,6 +10,8 @@ export type AuthSignUpData = {
   country?: string;
   city?: string;
   birthDate?: string;
+  photoUrl?: string;
+  isVerified?: boolean;
   address?: string;
 };
 

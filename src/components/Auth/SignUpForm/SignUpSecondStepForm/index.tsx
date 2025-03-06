@@ -114,6 +114,8 @@ function SignUpSecondStepForm() {
           firstName: decodedUserInfo.firstName,
           lastName: decodedUserInfo.lastName,
           email: decodedUserInfo.email,
+          photoUrl: decodedUserInfo.photoUrl,
+          isVerified: decodedUserInfo.isVerified,
           password: null
         };
 
