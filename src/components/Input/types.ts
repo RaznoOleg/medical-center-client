@@ -12,7 +12,12 @@ export type FieldName =
   | 'city'
   | 'birthDate'
   | 'specialization'
-  | 'doctor';
+  | 'doctor'
+  | 'systolic'
+  | 'diastolic'
+  | 'glucose'
+  | 'pulse'
+  | 'measurementTime';
 
 export type Option = {
   value: string | number;

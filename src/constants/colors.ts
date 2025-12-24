@@ -50,6 +50,8 @@ export const BLUE = '#4579EE';
 
 export const DRAWER_CONT = '#f4f6fd';
 
+export const LIGHT_GRAY_BLUE = '#e5e9f7b3';
+
 export const DRAWER_BORDER = '#e7e7e7';
 
 export const ACTIVE = '#4D84E7';

@@ -66,6 +66,14 @@ export type BookAppointment = {
   time: string;
 };
 
+export type VitalForm = {
+  systolic: string;
+  diastolic: string;
+  glucose: string;
+  pulse: string;
+  measurementTime?: string;
+};
+
 export type Help = {
   question: string;
   answer: string;
@@ -79,6 +87,7 @@ export type FormValues =
   | AuthResetPassword
   | Profile
   | Patient
-  | BookAppointment;
+  | BookAppointment
+  | VitalForm;
 
 export type WatchType = string | number | null | undefined;

@@ -20,6 +20,8 @@ import { patientApi } from './services/patientApi';
 import { availabilityApi } from './services/availabilityApi';
 import { appointmentApi } from './services/appointmentApi';
 import { noteApi } from './services/noteApi';
+import { vitalsApi } from './services/vitalsApi';
+import { predictionApi } from './services/predictionApi';
 
 const persistConfig = {
   key: 'medical-center',
@@ -34,6 +36,8 @@ const rootReducer = combineReducers({
   [availabilityApi.reducerPath]: availabilityApi.reducer,
   [appointmentApi.reducerPath]: appointmentApi.reducer,
   [noteApi.reducerPath]: noteApi.reducer,
+  [vitalsApi.reducerPath]: vitalsApi.reducer,
+  [predictionApi.reducerPath]: predictionApi.reducer,
   user: userReducer,
   navigation: navigationReducer,
   auth: persistReducer(persistConfig, authReducer)
@@ -52,7 +56,9 @@ export const store = configureStore({
       patientApi.middleware,
       availabilityApi.middleware,
       appointmentApi.middleware,
-      noteApi.middleware
+      noteApi.middleware,
+      vitalsApi.middleware,
+      predictionApi.middleware
     ])
 });
 
